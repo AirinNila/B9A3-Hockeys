@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey with daisyUi</title>
-    <!-- font-awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey with daisyUi</title>
+  <!-- font-awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- manrope-font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- manrope-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <style>
-        .manrope{
-            font-family: "Manrope", serif;
-        }
-    </style>
-<!-- tailwind custom colour -->
-<script>
+  <style>
+    .manrope {
+      font-family: "Manrope", serif;
+    }
+  </style>
+  <!-- tailwind custom colour -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -38,65 +43,92 @@
   </script>
 
 </head>
+
 <body class="manrope">
-    <header class="container mx-auto">
-      <!-- navbar -->
-      <div class="navbar bg-base-100 mt-6">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base">
-              <li class="text-primary-colour"><a>Home</a></li>
-              <li class="text-nav-tittle">
-                <a>About</a>
-              </li>
-              <li class="text-nav-tittle"><a>Pages</a></li>
-              <li class="text-nav-tittle"><a>Blog</a></li>
-              <li class="text-nav-tittle"><a>Contact</a></li>
-            </ul>
+  <header class="container mx-auto">
+    <!-- navbar -->
+    <div class="navbar bg-base-100 mt-6">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <a class="btn btn-ghost text-3xl">Hockey<span class="text-primary-colour">'</span>s</a>
-        </div>
-        <div class="navbar-center hidden lg:flex text-base">
-          <ul class="menu menu-horizontal px-1">
-            <li  class="text-primary-colour"><a>Home</a></li>
-            <li class="text-nav-tittle"> <a>About</a>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base">
+            <li class="text-primary-colour"><a>Home</a></li>
+            <li class="text-nav-tittle">
+              <a>About</a>
             </li>
             <li class="text-nav-tittle"><a>Pages</a></li>
             <li class="text-nav-tittle"><a>Blog</a></li>
             <li class="text-nav-tittle"><a>Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end flex gap-4 text-xl text-nav-tittle">
+        <a class="btn btn-ghost text-3xl">Hockey<span class="text-primary-colour">'</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex text-base">
+        <ul class="menu menu-horizontal px-1">
+          <li class="text-primary-colour"><a>Home</a></li>
+          <li class="text-nav-tittle"> <a>About</a>
+          </li>
+          <li class="text-nav-tittle"><a>Pages</a></li>
+          <li class="text-nav-tittle"><a>Blog</a></li>
+          <li class="text-nav-tittle"><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end flex gap-4 text-xl text-nav-tittle">
+        <div class="hidden lg:flex">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <a class="btn bg-primary-colour px-6 text-white">Get Ticket</a>
+        </div>
+        <a class="btn bg-primary-colour px-6 text-white">Get Ticket</a>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <section class="p-4">
+      <div class="hero h-[200px] w-full md:h-[450px] rounded-xl mt-8 lg:flex justify-end bg-cover items-end p-6"
+        style="background-image: url(/Images/1.png);">
+        <div class=" "></div>
+        <div class="hero-content hidden lg:flex text-white bg-tittle text-start rounded-lg">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-2xl font-bold">Meet all the heroes from the field</h1>
+            <p class="mb-5 text-base">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+
+          </div>
         </div>
       </div>
 
-    </header>
+      <!-- for-mini-device -->
+      <div class="px-1 py-4">
+        <div class="hero-content lg:hidden flex text-white bg-tittle text-start rounded-lg">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-lg font-bold">Meet all the heroes from the field</h1>
+            <p class="mb-5 text-sm">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <main class="container mx-auto">
+  </header>
 
-    </main>
+  <main class="container mx-auto">
 
-    <footer>
 
-    </footer>
-    
+  </main>
+
+  <footer>
+
+  </footer>
+
 </body>
+
 </html>
