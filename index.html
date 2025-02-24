@@ -526,7 +526,7 @@
 
     </section>
     <!-- get-in-touch-section -->
-    <section class="mt-16 p-4">
+    <section class="mt-16 md:p-0 p-4">
       <!-- get-in-des -->
       <div class="text-center space-y-4 py-4 border-dashed  border-t-2 border-b-2">
         <h3 class="text-3xl text-tittle font-extrabold">Professional Hockeys Club</h3>
@@ -538,24 +538,24 @@
 
       <div class="mt-10">
         <div class="hero ">
-          <div class="hero-content flex-1 flex-col gap-6 lg:flex-row">
+          <div class="hero-content flex-1 flex-col lg:flex-row">
             <!-- contact -->
-            <div class="border-2 rounded-xl p-8 w-full space-y-4 md:w-[350px]">
-              <div class=" p-4 space-y-2 rounded-xl bg-[#BCED6D33]">
+            <div class="border-2 rounded-xl md:px-10 md:py-8 p-4 w-full space-y-4 ">
+              <div class=" px-6 py-4 space-y-2 rounded-xl bg-[#BCED6D33] md:w-[350px]">
                   <div class="pb-4">
                     <img src="/Images/teliphone.png" alt="">
                   </div>
                   <p class="text-base text-des">Phone Number :</p>
                   <h3 class="text-xl text-tittle font-bold">(+62) 123-321-543</h3>
               </div>
-              <div class=" p-4 space-y-2 rounded-xl bg-[#FDDD5F1a]">
+              <div class=" py-4 px-6 space-y-2 rounded-xl bg-[#FDDD5F1a]">
                   <div class="pb-4">
                     <img src="/Images/message.png" alt="">
                   </div>
                   <p class="text-base text-des">Email :</p>
                   <h3 class="text-xl text-tittle font-bold">hockeys@support.com</h3>
               </div>
-              <div class=" p-4 space-y-2 rounded-xl bg-[#629CF31a]">
+              <div class=" py-4 px-6 space-y-2 rounded-xl bg-[#629CF31a]">
                   <div class="pb-4">
                     <img src="/Images/location.png" alt="">
                   </div>
@@ -620,10 +620,97 @@
 
     </section>
 
+      <!-- social-midea -->
+       <section class="mt-8 p-4">
+      <div class="footer footer-center bg-[#13131808]  rounded-xl p-6">
+        <h3 class="text-tittle text-2xl font-extrabold">Social Media</h3>
+        <nav>
+          <div class="flex items-center justify-center gap-8">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+          
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+            <a>
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a>
+              <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+          </div>
+        </nav>
+       
+      </div>
+    </section>
 
   </main>
 
-  <footer>
+  <footer class="mt-12">
+    <!-- footer -->
+    <footer class="footer flex flex-col justify-center items-center md:flex-row md:justify-evenly bg-tittle text-[#FFFFFF99] text-base p-10">
+      <div class="">
+      <nav class="space-y-3">
+        <h6 class="text-3xl text-white font-extrabold text-center md:text-start">Get in touch</h6>
+        <p class="text-center md:text-start">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <i class="fa-regular fa-envelope text-2xl text-primary-colour"></i>
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex items-center gap-3 justify-center md:justify-start">
+          <i class="fa-solid fa-phone text-2xl text-primary-colour"></i>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </div>
+        
+      </nav>
+
+      
+      <nav>
+        <h6 class="text-lg text-white font-bold">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Leadership</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">News & Article</a>
+        <a class="link link-hover">Legal Notice</a>
+       
+      </nav>
+      <nav>
+        <h6 class="text-lg text-white font-bold">Support</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+        <a class="link link-hover">Cookie policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <nav>
+        <h6 class="text-lg text-white font-bold">Service</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+        <a class="link link-hover">Cookie policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+   
+    </footer>
+  
 
   </footer>
 
